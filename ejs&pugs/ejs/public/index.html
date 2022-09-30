@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Carga de Productos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar--faqstyle bg--primary">
+            <div class="navbar__brand">
+                <h1 class="navbar__link mt--1">Carga de Productos</h1>
+            </div>
+            <div class="navbar__linkGroup">
+                <a href="/productos" class="navbar__link">Productos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="conteiner">
+        <form class="form" action="/productos" method="post">
+            <fieldset class="form__fieldset">
+    
+                <div class="form__grupo">
+                    <label class="form__label" for="title">Titulo</label>
+                    <input class="form__grupo__input" type="text" name="title" id="title">
+                </div>
+                
+                <div class="form__grupo">
+                    <label class="form__label" for="price">Precio</label>
+                    <input class="form__grupo__input" type="number" name="price" id="price">
+                </div>
+                
+                <div class="form__grupo">
+                    <label class="form__label" for="thumbnail">Imagen URL</label>
+                    <input class="form__grupo__input" type="text" name="thumbnail" id="thumbnail">
+                </div>
+
+                <div class="form__submit">
+                    <button class="form__submit__button" id='submitNewProduct'>Guardar</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+</body>
+</html>

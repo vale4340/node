@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('./partials/head.ejs') %> 
+</head>
+<body class="scroll--auto">
+    <header>
+        <nav class="navbar--faqstyle bg--primary">
+            <div class="navbar__brand">
+                <h1 class="navbar__link mt--1">Productos</h1>
+            </div>
+            <div class="navbar__linkGroup">
+                <a href="/" class="navbar__link">Inicio</a>
+            </div>
+        </nav>
+    </header>
+    <main  class="conteiner grid">
+        <% list.forEach(function( producto){ %>
+                <div class="card m-2">
+                    <img src="<%=producto.thumbnail%>" alt="imagen_del_producto">
+                    <h3><%=producto.title%></h3>
+                    <p>ID: <%=producto.id%></p>
+                    <p>$<%=producto.price%></p>
+                </div>
+        <% }) %>
+    </main>
+</body>
+</html>

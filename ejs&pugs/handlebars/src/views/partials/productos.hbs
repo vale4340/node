@@ -1,0 +1,22 @@
+
+<header>
+    <nav class="navbar--faqstyle bg--primary">
+        <div class="navbar__brand">
+            <h1 class="navbar__link mt--1">Productos</h1>
+        </div>
+        <div class="navbar__linkGroup">
+            <a href="/" class="navbar__link">Inicio</a>
+        </div>
+    </nav>
+</header>
+
+<main  class="conteiner grid">
+    {{#each list}}
+        <div class="card m-2">
+            <img src="{{thumbnail}}" alt="imagen_del_producto">
+            <h3>{{title}}</h3>
+            <p>ID: {{id}}</p>
+            <p>${{price}}</p>
+        </div>
+    {{/each}}
+</main>
